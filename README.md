@@ -9,7 +9,7 @@ docker compose up -d
 ```
 cd app
 
-kafka-topics --create \
+docker exec broker kafka-topics --create \
     --topic [nome_do_tópico] \
     --bootstrap-server localhost:9092 \
     --replication-factor 1 \
